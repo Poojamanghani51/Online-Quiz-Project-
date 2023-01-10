@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+        <title>Online Quiz</title>
+        <style type ="text/css">
+            body{
+			text-align: left;
+			background-color:lightgreen;
+			font-size: 15px;
+			color:black;
+   font-weight:bold;
+}
+        </style>
+    </head>
+    <body>
+        <h1>HTML MCQ</h1>
+        <form name = "myform">
+         Q1.Who was the primary author of HTML?
+         <br>
+         <input type ="radio" name="q1" value="A">Brendan Eich<br>  
+         <input type ="radio" name="q1" value="B">Sabeer Bhatia<br>
+         <input type ="radio" name="q1" value="C">Google Inc.<br>  
+         <input type ="radio" name="q1" value="D">Tim Berners-Lee<br> 
+          <br> 
+         Q2.What does HTML stand for?
+           <br> 
+         <input type ="radio" name="q2" value="A">Home Tool Markup Language<br>  
+         <input type ="radio" name="q2" value="B">Hyperlinks and Text Markup Language<br>
+         <input type ="radio" name="q2" value="C">Hyper Text Markup Language<br>  
+         <input type ="radio" name="q2" value="D">Hyper Text Markup Link<br>
+          <br>
+         Q3.Choose the correct HTML element for the largest heading:
+         <br>
+         <input type ="radio" name="q3" value="A">&#x3Ch1&#x3E<br>  
+         <input type ="radio" name="q3" value="B">&#x3Cheading&#x3E<br>
+         <input type ="radio" name="q3" value="C">&#x3Chead&#x3E<br>  
+         <input type ="radio" name="q3" value="D">&#x3Ch6&#x3E<br>
+          <br>
+          Q4.IDE stands for _____
+         <br>
+         <input type ="radio" name="q4" value="A">Internet Development Environment<br>  
+         <input type ="radio" name="q4" value="B">Internal Development Environment<br>
+         <input type ="radio" name="q4" value="C">Intelligent Development Environment<br>  
+         <input type ="radio" name="q4" value="D">Integrated Developed Environment<br>
+        <br>
+         Q5.How many browser safe colors are there?
+          <br>
+         <input type ="radio" name="q5" value="A">16 Million<br>  
+         <input type ="radio" name="q5" value="B">216<br>
+         <input type ="radio" name="q5" value="C">256<br>  
+         <input type ="radio" name="q5" value="D">None of the above<br>
+        <br> 
+         <input type ="button" value ="Submit" onclick ="check()"> 
+         </form>
+         <script>
+             function check(){
+var q1 = document.myform.q1.value;
+var q2 = document.myform.q2.value;
+var q3 = document.myform.q3.value;
+var q4 = document.myform.q4.value;
+var q5 = document.myform.q5.value;
+var count=0;
+
+if(q1 == "D"){
+count++;
+}
+if(q2 == "C"){
+count++;
+}
+if(q3 == "A"){
+count++;
+}
+if(q4 == "D"){
+count++;
+}
+if(q5 == "C"){
+count++;
+}
+alert("Your Total Score is" +count+"");
+}
+</script>
+</body>
+</html>
